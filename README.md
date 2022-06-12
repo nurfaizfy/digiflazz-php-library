@@ -14,8 +14,8 @@ This library is unofficial Digiflazz API written with PHP.
         -   [Create Deposit Ticket](#create-deposit-ticket)
     -   [Transaction](#transaction)
         -   [Create Transaction](#create-transaction)
-        -   [Pascabayar Inquiry](#pascabayar-inquiry)
-        -   [Pay Pascabayar](#pay-pascabayar)
+        -   [Inquiry Postpaid](#inquiry-postpaid)
+        -   [Pay Postpaid](#pay-postpaid)
         -   [Inquiry PLN](#inquiry-pln)
     -   [Callback](#callback)
         -   [Get Callback](#get-callback)
@@ -213,12 +213,12 @@ var_dump($iquiryPLN);
 
 Use this method to get Callback
 ```php
-\Digiflazz\Callback::getCallback(array $params);
+\Digiflazz\Callback::getCallback();
 ```
 
 Use this method to get JSON Callback
 ```php
-\Digiflazz\Callback::getJsonCallback(array $params);
+\Digiflazz\Callback::getJsonCallback();
 ```
 
 ## Exceptions
