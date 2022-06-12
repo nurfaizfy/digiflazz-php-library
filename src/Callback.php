@@ -17,7 +17,7 @@ class Callback
 {
     private static function request()
     {
-        return $this->request = Request::createFromGlobals();
+        return Request::createFromGlobals();
     }
 
     /**

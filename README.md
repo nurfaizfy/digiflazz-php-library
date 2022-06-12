@@ -1,4 +1,7 @@
 # Digiflazz PHP Library
+[![Latest Stable Version](http://poser.pugx.org/nurfaizfy/digiflazz-php-library/v)](https://packagist.org/packages/nurfaizfy/digiflazz-php-library)
+[![Total Downloads](http://poser.pugx.org/nurfaizfy/digiflazz-php-library/downloads)](https://packagist.org/packages/nurfaizfy/digiflazz-php-library)
+[![License](http://poser.pugx.org/nurfaizfy/digiflazz-php-library/license)](https://packagist.org/packages/nurfaizfy/digiflazz-php-library)
 
 This library is unofficial Digiflazz API written with PHP.
 
