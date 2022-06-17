@@ -1,9 +1,9 @@
 <?php
 
-namespace Digiflazz\Request;
+namespace Gonon\Request;
 
-use Digiflazz\Exceptions\InvalidArgumentException;
-use Digiflazz\Exceptions\ApiException;
+use Gonon\Exceptions\InvalidArgumentException;
+use Gonon\Exceptions\ApiException;
 
 /**
  * Trait Helper

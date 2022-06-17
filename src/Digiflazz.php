@@ -9,7 +9,7 @@
  * @link     https://api.digiflazz.com
  */
 
-namespace Digiflazz;
+namespace Gonon;
 
 class Digiflazz
 {

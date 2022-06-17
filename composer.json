@@ -9,7 +9,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Digiflazz\\": "src/"
+            "Gonon\\": "src/"
         }
     },
     "authors": [

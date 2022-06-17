@@ -1,6 +1,6 @@
 <?php
 
-namespace Digiflazz\Exceptions;
+namespace Gonon\Exceptions;
 
 /**
  * Class InvalidArgumentException

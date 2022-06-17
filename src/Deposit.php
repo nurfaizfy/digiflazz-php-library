@@ -9,9 +9,9 @@
  * @link     https://api.digiflazz.com/v1
  */
 
-namespace Digiflazz;
+namespace Gonon;
 
-use Digiflazz\Digiflazz;
+use Gonon\Digiflazz;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 
