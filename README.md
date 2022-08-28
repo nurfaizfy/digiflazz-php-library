@@ -48,7 +48,7 @@ or add it manually in your `composer.json` file.
 Configure package with your account's secret key obtained from [Digiflazz Dashboard](https://member.digiflazz.com/buyer-area/connection/api).
 
 ```php
-use Digiflazz\Digiflazz;
+use Gonon\Digiflazz\Digiflazz;
 Digiflazz::initDigiflazz('username', 'apikey');
 ```
 
@@ -59,13 +59,13 @@ Digiflazz::initDigiflazz('username', 'apikey');
 #### Get Balance
 
 ```php
-\Digiflazz\Balance::getBalance();
+\Gonon\Digiflazz\Balance::getBalance();
 ```
 
 Usage example:
 
 ```php
-$getBalance = \Digiflazz\Balance::getBalance();
+$getBalance = \Gonon\Digiflazz\Balance::getBalance();
 var_dump($getBalance);
 ```
 
@@ -74,14 +74,14 @@ var_dump($getBalance);
 #### Get Price List
 
 ```php
-\Digiflazz\PriceList::getPrePaid(); // Prepaid product
-\Digiflazz\PriceList::getPostPaid(); // Postpaid product
+\Gonon\Digiflazz\PriceList::getPrePaid(); // Prepaid product
+\Gonon\Digiflazz\PriceList::getPostPaid(); // Postpaid product
 ```
 
 Usage example:
 
 ```php
-$priceList = \Digiflazz\PriceList::getPrePaid();
+$priceList = \Gonon\Digiflazz\PriceList::getPrePaid();
 var_dump($priceList);
 ```
 
@@ -90,7 +90,7 @@ var_dump($priceList);
 #### Create Deposit Ticket
 
 ```php
-\Digiflazz\Deposit::createDeposit(array $params);
+\Gonon\Digiflazz\Deposit::createDeposit(array $params);
 ```
 
 Parameters for this method
@@ -108,7 +108,7 @@ $params = [
     'bank' => 'BCA',
     'owner_name' => 'Digiflazz',
 ];
-$createDeposit = \Digiflazz\Deposit::createDeposit($params);
+$createDeposit = \Gonon\Digiflazz\Deposit::createDeposit($params);
 var_dump($createDeposit);
 ```
 
@@ -117,7 +117,7 @@ var_dump($createDeposit);
 #### Create Transaction
 
 ```php
-\Digiflazz\Transaction::createTransaction(array $params);
+\Gonon\Digiflazz\Transaction::createTransaction(array $params);
 ```
 
 Parameters for this method
@@ -135,14 +135,14 @@ $params = [
     'customer_no' => '08123456789',
     'ref_id' => 'some1d',
 ];
-$createTrasaction = \Digiflazz\Transaction::createTransaction($params);
+$createTrasaction = \Gonon\Digiflazz\Transaction::createTransaction($params);
 var_dump($createTrasaction);
 ```
 
 #### Inquiry Postpaid
 
 ```php
-\Digiflazz\Transaction::inquiryPostpaid(array $params);
+\Gonon\Digiflazz\Transaction::inquiryPostpaid(array $params);
 ```
 
 Parameters for this method
@@ -160,14 +160,14 @@ $params = [
     'customer_no' => '08123456789',
     'ref_id' => 'some1d',
 ];
-$pascaInquiry = \Digiflazz\Transaction::inquiryPostpaid($params);
+$pascaInquiry = \Gonon\Digiflazz\Transaction::inquiryPostpaid($params);
 var_dump($pascaInquiry);
 ```
 
 #### Pay Postpaid
 
 ```php
-\Digiflazz\Transaction::payPostpaid(array $params);
+\Gonon\Digiflazz\Transaction::payPostpaid(array $params);
 ```
 
 Parameters for this method
@@ -185,14 +185,14 @@ $params = [
     'customer_no' => '08123456789',
     'ref_id' => 'some1d',
 ];
-$payPasca = \Digiflazz\Transaction::payPostpaid($params);
+$payPasca = \Gonon\Digiflazz\Transaction::payPostpaid($params);
 var_dump($payPasca);
 ```
 
 #### Inquiry PLN
 
 ```php
-\Digiflazz\Transaction::inquiryPLN(array $params);
+\Gonon\Digiflazz\Transaction::inquiryPLN(array $params);
 ```
 
 Parameters for this method
@@ -206,7 +206,7 @@ Usage example:
 $params = [
     'customer_no' => '123456789',
 ];
-$iquiryPLN = \Digiflazz\Transaction::inquiryPLN($params);
+$iquiryPLN = \Gonon\Digiflazz\Transaction::inquiryPLN($params);
 var_dump($iquiryPLN);
 ```
 
@@ -216,12 +216,12 @@ var_dump($iquiryPLN);
 
 Use this method to get Callback
 ```php
-\Digiflazz\Callback::getCallback();
+\Gonon\Digiflazz\Callback::getCallback();
 ```
 
 Use this method to get JSON Callback
 ```php
-\Digiflazz\Callback::getJsonCallback();
+\Gonon\Digiflazz\Callback::getJsonCallback();
 ```
 
 ## Exceptions
@@ -242,8 +242,8 @@ To get exception message:
 
 ```php
 try {
-    $transaction = \Digiflazz\Transaction::createTransaction(array $params);
-} catch (\Digiflazz\Exceptions\ApiException $e) {
+    $transaction = \Gonon\Digiflazz\Transaction::createTransaction(array $params);
+} catch (\Gonon\Digiflazz\Exceptions\ApiException $e) {
     var_dump($e->getMessage());
 }
 ```
@@ -252,8 +252,8 @@ To get exception HTTP error code:
 
 ```php
 try {
-    $transaction = \Digiflazz\Transaction::createTransaction(array $params);
-} catch (\Digiflazz\Exceptions\ApiException $e) {
+    $transaction = \Gonon\Digiflazz\Transaction::createTransaction(array $params);
+} catch (\Gonon\Digiflazz\Exceptions\ApiException $e) {
     var_dump($e->getCode());
 }
 ```
@@ -262,8 +262,8 @@ To get exception Digiflazz API error code:
 
 ```php
 try {
-    $transaction = \Digiflazz\Transaction::createTransaction(array $params);
-} catch (\Digiflazz\Exceptions\ApiException $e) {
+    $transaction = \Gonon\Digiflazz\Transaction::createTransaction(array $params);
+} catch (\Gonon\Digiflazz\Exceptions\ApiException $e) {
     var_dump($e->getErrorCode());
 }
 ```
