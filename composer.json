@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "guzzlehttp/guzzle": "^7.0",
-        "symfony/http-foundation": "^5.0"
+        "symfony/http-foundation": "^6.0"
     },
     "license": "MIT",
     "autoload": {
