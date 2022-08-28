@@ -11,8 +11,8 @@
 
 namespace Gonon;
 
-use Gonon\Digiflazz;
-use Gonon\Exceptions\ApiException;
+use Gonon\Digiflazz\Digiflazz;
+use Gonon\Digiflazz\Exceptions\ApiException;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 
