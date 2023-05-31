@@ -1,5 +1,5 @@
 {
-    "name": "nurfaizfy/digiflazz-php-library",
+    "name": "skylastn/digiflazz_php_library",
     "description": "Unofficial PHP Library Digiflazz",
     "type": "library",
     "require": {
