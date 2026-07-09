@@ -1,3 +1,6 @@
+# PROJECT ARCHIEVED
+Please refer to [GononLibs/digiflazz](https://github.com/GononLabs/digiflazz)
+
 # Digiflazz PHP Library
 [![Latest Stable Version](http://poser.pugx.org/nurfaizfy/digiflazz-php-library/v)](https://packagist.org/packages/nurfaizfy/digiflazz-php-library)
 [![Total Downloads](http://poser.pugx.org/nurfaizfy/digiflazz-php-library/downloads)](https://packagist.org/packages/nurfaizfy/digiflazz-php-library)
